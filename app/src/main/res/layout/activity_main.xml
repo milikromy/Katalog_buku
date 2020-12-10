@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:paddingTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"
+        android:text="@string/app_name"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/buku_fIksi"
+                    android:layout_marginStart="70dp"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="25dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="30dp"
+                    android:background="@mipmap/book_foreground"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/buku_non_Iksi"
+                    android:layout_toRightOf="@id/buku_fIksi"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="70dp"
+                    android:background="@mipmap/book_foreground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:id="@+id/titleBf"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Buku Fiksi"
+                    android:layout_marginStart="85dp"
+                    android:paddingRight="35dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@id/buku_fIksi"
+                    android:textColor="@color/teal_700" />
+                <TextView
+                    android:id="@+id/titleBnf"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/teal_700"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="80dp"
+                    android:layout_below="@id/buku_non_Iksi"
+                    android:layout_height="wrap_content"
+                    android:text="Buku Non-fiksi" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:paddingBottom="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Oleh :"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="Mil Ikrom Yani"/>
+
+</RelativeLayout>
